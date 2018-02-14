@@ -9,6 +9,7 @@ image: .image
 
 clean:
 	@-docker rmi $(IMG)
+	@rm -f .image
 
 push: .image
 	@docker push $(IMG)
